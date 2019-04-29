@@ -19,7 +19,6 @@ def new(request):
             return redirect('home')
     else:
         form = PostForm()
-        
     return render(request, 'blog/new.html', {'form':form})
             
     
